@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="5dp"
+    android:orientation="vertical"
+    tools:context=".ReceiverInfoActivity">
+
+    <TextView
+        android:id="@+id/txtReceiverInformation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Thông tin người nhận"
+        android:textColor="@color/colorGreen"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/txtRecipientName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tên người nhận hàng: " />
+
+    <EditText
+        android:id="@+id/edttxtRecipientName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Nhập tên người nhận hàng"
+        android:inputType="textPersonName"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/txtCustomerPhoneNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Số điện thoại: " />
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Nhập số điện thoại người nhận"
+        android:inputType="number"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/txtDeliveryAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Địa chỉ nhận hàng: " />
+
+    <EditText
+        android:id="@+id/edtDeliveryAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Nhập địa chỉ người nhận hàng"
+        android:inputType="textPostalAddress"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/txtNote"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ghi chú:" />
+
+    <EditText
+        android:id="@+id/edtNote"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Nhập ghi chú"
+        android:inputType="text"
+        android:text="" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnXNDonHang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:text="Xác Nhận Đơn Hàng" />
+
+        <Button
+            android:id="@+id/btnHuyDatHang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:text="Hủy Đặt Hàng" />
+    </LinearLayout>
+</LinearLayout>

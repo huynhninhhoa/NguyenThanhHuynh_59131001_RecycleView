@@ -6,4 +6,7 @@ import vn.edu.ntu.nguyenthanhhuynh_59131001.recycleview.Model.Product;
 
 public interface ICartController {
     public List<Product> getAllProducts();
+    public boolean addToCart(Product p);
+    public List<Product> getShoppingCart();
+    void clearShoppingCart();
 }
